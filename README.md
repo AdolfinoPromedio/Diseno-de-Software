@@ -1,2 +1,2 @@
 # Diseno-de-Software
-Mario Rozas y José Castillo
+Mario Rozas, José Castillo y Pablo Silva
