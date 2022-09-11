@@ -1,16 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { Button } from 'react-bootstrap';
-
-
-import Portada from './components/portada';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Cover from './components/Cover';
 
 function App() {
   return (
     <div className="App">
-
-      <Portada></Portada>
+      <Cover/>
       
 
       
