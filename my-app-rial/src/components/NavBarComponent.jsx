@@ -7,8 +7,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image'
 import logo from '../Imagenes/logo.png';
-
-import styled from 'styled-components';
 import './MyStyles.css'
 
 
