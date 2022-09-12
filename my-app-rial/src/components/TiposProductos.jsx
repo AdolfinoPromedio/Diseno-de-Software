@@ -1,6 +1,4 @@
 import React, { Component } from 'react'  
-
-
 import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -46,9 +44,6 @@ const cards = [
     image: "https://animalgourmet.com/wp-content/uploads/2019/12/postres-guadalajara.jpg",
   },
 ];
-
-
-
 
 function GroupsCards() {
   return (

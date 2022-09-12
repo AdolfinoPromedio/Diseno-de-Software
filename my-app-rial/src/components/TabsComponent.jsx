@@ -2,29 +2,100 @@ import React from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 /* import Sonnet from '../../components/Sonnet'; */
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import img3 from '../Imagenes/EXT09845.png';
+import './MyStyles.css'
 
 export const TabsComponent = () => {
   return (
     <Tabs
-      defaultActiveKey="profile"
+      defaultActiveKey="home"
       id="justify-tab-example"
       className="mb-3"
       justify
     >
-      <Tab eventKey="home" title="Home">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus nisi, dignissim id rutrum et, molestie in eros. Phasellus mattis nulla ac nibh sodales, a vestibulum eros suscipit. Duis id lorem neque. Praesent mollis, augue dapibus volutpat efficitur, enim quam dictum ipsum, ac sagittis felis urna ac nulla. Nullam purus velit, tincidunt non hendrerit sit amet, malesuada nec leo. Donec sit amet sollicitudin orci. Maecenas tristique lorem id arcu ultrices, vitae luctus metus cursus. Ut porttitor urna a justo placerat faucibus. Sed ut neque cursus, accumsan neque sed, placerat est. Vivamus porta sed eros vel sodales. Integer tortor augue, bibendum eu congue vitae, hendrerit id sem. Duis ac nibh blandit, mattis nisl vel, varius neque.
-        <br></br>
-        {/* <Sonnet /> */}
+      <Tab eventKey="home" title="Historia" className='tabs-bg'>
+        <Container >
+          <Row>
+            <Col className='tabs-text'>
+              Somos Rincon Dulce, una pasteleria familiar fundada el 2002 con el objetivo de llevar dulces de calidad a la mayor cantidad de clientes posibles,
+              buscando no solo destacar con esto, si no también a un gran servicio orientado en la cercanía con los usuarios. Tenemos una gran variedad de productos,
+              respecto a los dulces, estos van desde dulces chilenos hasta dulces de otras culturas, y no solo eso, ya que de a poco se han ido incorporando productos
+              salados de todo tipo, como empanadas. Los invitamos a echar un ojo por la página y encantarse con nuestros ricos postres!!!
+            </Col>
+            <Col>
+              <img
+              className="d-block w-100"
+              src={img3}
+              alt="First tab photo"
+              />
+            </Col>
+          </Row>
+        </Container>
       </Tab>
-      <Tab eventKey="profile" title="Profile">
-        {/* <Sonnet /> */}
+      
+      <Tab eventKey="profile" title="Productos">
+      <Container >
+          <Row>
+            <Col className='tabs-text'>
+              Somos Rincon Dulce, una pasteleria familiar fundada el 2002 con el objetivo de llevar dulces de calidad a la mayor cantidad de clientes posibles,
+              buscando no solo destacar con esto, si no también a un gran servicio orientado en la cercanía con los usuarios. Tenemos una gran variedad de productos,
+              respecto a los dulces, estos van desde dulces chilenos hasta dulces de otras culturas, y no solo eso, ya que de a poco se han ido incorporando productos
+              salados de todo tipo, como empanadas. Los invitamos a echar un ojo por la página y encantarse con nuestros ricos postres!!!
+            </Col>
+            <Col>
+              <img
+              className="d-block w-100"
+              src={img3}
+              alt="First tab photo"
+              />
+            </Col>
+          </Row>
+        </Container>
       </Tab>
-      <Tab eventKey="longer-tab" title="Loooonger Tab">
-        {/* <Sonnet /> */}
+
+      <Tab eventKey="longer-tab" title="Trabaja con nosotros">
+      <Container >
+          <Row>
+            <Col className='tabs-text'>
+              Somos Rincon Dulce, una pasteleria familiar fundada el 2002 con el objetivo de llevar dulces de calidad a la mayor cantidad de clientes posibles,
+              buscando no solo destacar con esto, si no también a un gran servicio orientado en la cercanía con los usuarios. Tenemos una gran variedad de productos,
+              respecto a los dulces, estos van desde dulces chilenos hasta dulces de otras culturas, y no solo eso, ya que de a poco se han ido incorporando productos
+              salados de todo tipo, como empanadas. Los invitamos a echar un ojo por la página y encantarse con nuestros ricos postres!!!
+            </Col>
+            <Col>
+              <img
+              className="d-block w-100"
+              src={img3}
+              alt="First tab photo"
+              />
+            </Col>
+          </Row>
+        </Container>
       </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
-        {/* <Sonnet /> */}
+
+      <Tab eventKey="contact" title="Contacto" disabled>
+      <Container >
+          <Row>
+            <Col className='tabs-text'>
+              Somos Rincon Dulce, una pasteleria familiar fundada el 2002 con el objetivo de llevar dulces de calidad a la mayor cantidad de clientes posibles,
+              buscando no solo destacar con esto, si no también a un gran servicio orientado en la cercanía con los usuarios. Tenemos una gran variedad de productos,
+              respecto a los dulces, estos van desde dulces chilenos hasta dulces de otras culturas, y no solo eso, ya que de a poco se han ido incorporando productos
+              salados de todo tipo, como empanadas. Los invitamos a echar un ojo por la página y encantarse con nuestros ricos postres!!!
+            </Col>
+            <Col>
+              <img
+              className="d-block w-100"
+              src={img3}
+              alt="First tab photo"
+              />
+            </Col>
+          </Row>
+        </Container>
       </Tab>
+
     </Tabs>
   )
 };

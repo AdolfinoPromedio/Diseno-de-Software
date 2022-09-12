@@ -1,8 +1,6 @@
 import React from "react";
 import Card from "./Card";
 
-
-
 const cards = [
   {
     id: 1,

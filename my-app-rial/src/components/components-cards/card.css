@@ -24,3 +24,15 @@
 .card-img-top:hover {
   transform: scale(1.8);
 }
+
+.card{
+  margin-right:20px!important;
+  margin-left:20px!important;
+  margin-top:50px!important ;
+  }
+
+.card-img-top {
+  width: 10%;
+  height: 15vw;
+  object-fit: cover;
+}
