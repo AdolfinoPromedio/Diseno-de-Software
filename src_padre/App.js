@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { Button } from 'react-bootstrap';
-
-
-import Portada from './components/portada';
+import CarrouselComponent from './components/CarrouselComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBarComponent from './components/NavBarComponent';
+import FooterComponent from './components/FooterComponent';
+import CardComponent from './components/CardComponent';
+import TabsComponent from './components/TabsComponent';
 import GroupsCards from './components/TiposProductos';
-import ListaGroupsCards from './components/listadoproductos';
+import Groupspruductos from './components/productos';
+/* import PaginationComponente from './components/PaginationComponente'; */
 
 function App() {
   return (
     <div className="App">
-      
-      <Portada></Portada>
-      
+     {/* <NavBarComponent></NavBarComponent>
+      <CarrouselComponent></CarrouselComponent>
+      <TabsComponent></TabsComponent>
+       <CardComponent></CardComponent> 
       <GroupsCards></GroupsCards>
-      <div>
-        <ListaGroupsCards></ListaGroupsCards>
-      </div>
-      
+      <header className="App-header">
+      <FooterComponent></FooterComponent>
+      </header>*/}
+
+      <Groupspruductos></Groupspruductos>
     </div>
   );
 }

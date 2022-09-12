@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: bisque;
 }
 
 .App-logo {
@@ -38,35 +37,15 @@
   }
 }
 
-.color-van{
-  background-color: "#7794ec";
-}
-
-.carousel {
-  width:900px;
-  
-  margin: auto;
-  background-color: #282c34;
-}
-
-.item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 300px;
-}
-
 .card{
   margin-right:20px!important;
   margin-left:20px!important;
   margin-top:50px!important ;
+  
   }
 
-  .card-img-top {
-    width: 10%;
-    height: 15vw;
-    object-fit: cover;
-    
-
+.card-img-top {
+  width: 10%;
+  height: 15vw;
+  object-fit: cover;
 }
-
