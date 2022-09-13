@@ -13,7 +13,7 @@ export const CarrouselComponent = () => {
 
         <Carousel.Item>
           <img
-            className="photo-carrousel"
+            className="photo-carrousel" 
             src={img1}
             alt="First slide"
           />
@@ -32,7 +32,7 @@ export const CarrouselComponent = () => {
   
           <Carousel.Caption className='carrousel-text'>
             <h3>En el Rincon Dulce</h3>
-            <p>Ofrecemos un servicio de calidad para todos y todas.</p>
+            <p>Ofrecemos un servicio de calidad para todos.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>

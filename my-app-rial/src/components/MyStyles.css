@@ -19,7 +19,7 @@
 
 .photo-carrousel{
     height: auto;
-    max-width: 75%; 
+    max-width: 60%; 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -47,5 +47,10 @@
 }
 
 .tabs-bg{
-    background-color: rgb(232, 212, 204);
+    background-color: #fae5a7;
+}
+
+.shadow{
+    margin-top: 50px;
+    background-color: #ddc785;
 }

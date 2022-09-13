@@ -6,6 +6,7 @@ import NavBarComponent from './components/NavBarComponent';
 import FooterComponent from './components/FooterComponent';
 import CardComponent from './components/CardComponent';
 import TabsComponent from './components/TabsComponent';
+import Groupspruductos from './components/productos';
 import GroupsCards from './components/TiposProductos';
 /* import PaginationComponente from './components/PaginationComponente'; */
 
@@ -15,11 +16,9 @@ function App() {
       <NavBarComponent></NavBarComponent>
       <CarrouselComponent></CarrouselComponent>
       <TabsComponent></TabsComponent>
-      {/* <CardComponent></CardComponent> */}
       <GroupsCards></GroupsCards>
-      <header className="App-header">
       <FooterComponent></FooterComponent>
-      </header>
+      {/* <Groupspruductos></Groupspruductos> */}
     </div>
   );
 }
