@@ -5,8 +5,6 @@ import img2 from '../Imagenes/EXT00016.png';
 import img3 from '../Imagenes/EXT09845.png';
 import './MyStyles.css'
 
-
-
 export const CarrouselComponent = () => {
     return (
         <Carousel fade>

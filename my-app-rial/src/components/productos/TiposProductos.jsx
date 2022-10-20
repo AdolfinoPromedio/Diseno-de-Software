@@ -1,9 +1,7 @@
 import React, { Component } from 'react'  
-import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Card from './components-cards/Card';
-
 
 const cards = [
   {

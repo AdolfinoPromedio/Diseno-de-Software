@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image'
 import logo from '../Imagenes/logo.png';
 import './MyStyles.css'
+import {Link} from 'react-router-dom';
 
 
 export const NavBarComponent = () => {
@@ -15,26 +16,27 @@ export const NavBarComponent = () => {
     
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home"><Image src={logo}  roundedCircle  width={80} height={80}/></Navbar.Brand>
+
+        <Navbar.Brand as={Link} to="/" ><Image src={logo}  roundedCircle  width={80} height={80}/></Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
             <div class="d-flex flex-row">
-              <Nav.Link href="#home"> <div class="navbar-text">Home</div> </Nav.Link>
-              <Nav.Link href="#link"> <div class="navbar-text">Productos</div> </Nav.Link>
+
+              <Nav.Link as={Link} to='/'> <div class="navbar-text">Home</div> </Nav.Link>
+
+              <Nav.Link as={Link} to='/Productos'> <div class="navbar-text">Productos</div> </Nav.Link>
 
               <NavDropdown title="Ubicación" id="basic-nav-dropdown" className='navbar-text'>
-                <NavDropdown.Item href="#action/3.1"><div class="navbar-subtext"> Ubicación 1</div></NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2"><div class="navbar-subtext">Ubicación 2</div></NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3"><div class="navbar-subtext">Ubicación 3</div></NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/Ubicacion'><div class="navbar-subtext">Ubicación 1</div></NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/Ubicacion'><div class="navbar-subtext">Ubicación 2</div></NavDropdown.Item>
                 <NavDropdown.Divider />
               </NavDropdown>
 
-              {/* {<span className="navbar-text">Ubicación</span>}  */}
-
               <NavDropdown title="Redes" id="basic-nav-dropdown" className='navbar-text'>
-                <NavDropdown.Item href="#action/4.1"><div class="navbar-subtext">Redes Sociales 1</div></NavDropdown.Item>
-                <NavDropdown.Item href="#action/4.2"><div class="navbar-subtext">Redes Sociales 2</div></NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/Redes'><div class="navbar-subtext">Redes Sociales 1</div></NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/Redes'><div class="navbar-subtext">Redes Sociales 2</div></NavDropdown.Item>
                 <NavDropdown.Divider />
               </NavDropdown>
             </div>
