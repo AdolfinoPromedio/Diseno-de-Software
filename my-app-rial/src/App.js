@@ -11,8 +11,9 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from './pages/Home';
 import Productos from './pages/Productos';
-import Redes from './pages/Redes';
 import Ubicacion from './pages/Ubicacion';
+import Ordenar from './pages/Ordenar';
+import Contacto from './pages/Contacto';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} ></Route>
           <Route path='/Productos' element={<Productos />} ></Route>
-          <Route path='/Redes' element={<Redes />} ></Route>
           <Route path='/Ubicacion' element={<Ubicacion />} ></Route>
+          <Route path='/Ordenar' element={<Ordenar />} ></Route>
+          <Route path='/Contacto' element={<Contacto />} ></Route>
         </Routes>
         <FooterComponent></FooterComponent>
       </Router>

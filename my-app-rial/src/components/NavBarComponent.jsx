@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image'
 import logo from '../Imagenes/logo.png';
-import './MyStyles.css'
+import '../components/styles/MyStyles.css'
 import {Link} from 'react-router-dom';
 
 
@@ -29,16 +29,14 @@ export const NavBarComponent = () => {
               <Nav.Link as={Link} to='/Productos'> <div class="navbar-text">Productos</div> </Nav.Link>
 
               <NavDropdown title="Ubicación" id="basic-nav-dropdown" className='navbar-text'>
-                <NavDropdown.Item as={Link} to='/Ubicacion'><div class="navbar-subtext">Ubicación 1</div></NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/Ubicacion'><div class="navbar-subtext">Ubicación 2</div></NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/Ubicacion'><div class="navbar-subtext">San Miguel</div></NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/Ubicacion'><div class="navbar-subtext">La Florida</div></NavDropdown.Item>
                 <NavDropdown.Divider />
               </NavDropdown>
 
-              <NavDropdown title="Redes" id="basic-nav-dropdown" className='navbar-text'>
-                <NavDropdown.Item as={Link} to='/Redes'><div class="navbar-subtext">Redes Sociales 1</div></NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/Redes'><div class="navbar-subtext">Redes Sociales 2</div></NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
+              <Nav.Link as={Link} to='/Contacto'> <div class="navbar-text">Contacto</div> </Nav.Link>
+
+              <Nav.Link as={Link} to='/Ordenar'> <div class="navbar-text">Ordenar</div> </Nav.Link>
             </div>
           </Nav>
 

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import img3 from '../Imagenes/EXT09845.png';
-import './MyStyles.css'
+import '../components/styles/MyStyles.css'
 
 export const TabsComponent = () => {
   return (

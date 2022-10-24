@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../Imagenes/EXT00002.png';
 import img2 from '../Imagenes/EXT00016.png';
 import img3 from '../Imagenes/EXT09845.png';
-import './MyStyles.css'
+import '../components/styles/MyStyles.css'
 
 export const CarrouselComponent = () => {
     return (
