@@ -1,0 +1,40 @@
+.card:hover {
+  transition: all 0.7s linear;
+}
+.card{
+  height: 25%;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  
+  
+}
+.card-body {
+  padding:  0 !important;
+  height: 25%;
+  width:  auto;
+  padding: auto;
+  
+}
+
+
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: aliceblue;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  
+  transition: all 0.2s ease-in-out;
+  height: 50%;
+  
+  width:  100%;
+}
+
+
+
+

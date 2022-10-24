@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Card from './components-cards/Card';
+import Card_categoria from './Card-ctg';
 
 
 const cards = [
@@ -54,15 +54,15 @@ function GroupsCards() {
   return (
     
     
-    <Row xs={2} md={1} className="g-4">
-    {Array.from({ length: 1}).map((_, idx) => (
+    <Row xs={3} md={1} className="g-4">
+    {Array.from({ length: 2}).map((_, idx) => (
       <Col>
         <div>
           <div className="container d-flex justify-content-center align-items-center h-100">
           <div className="row">
             {cards.map(({ title, image, url, id }) => (
               <div className="col-md-4" key={id}>
-                <Card imageSource={image} title={title} url={url} />
+                <Card_categoria imageSource={image} title={title} url={url} />
               </div>
             ))}
           </div>
