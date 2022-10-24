@@ -1,23 +1,20 @@
-import './App.css';
 import React from 'react';
-import CarrouselComponent from './components/CarrouselComponent';
+import logo from './logo.svg';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBarComponent from './components/NavBarComponent';
-import FooterComponent from './components/FooterComponent';
-import CardComponent from './components/CardComponent';
-import TabsComponent from './components/TabsComponent';
-import GroupsCards from './components/TiposProductos';
-/* import PaginationComponente from './components/PaginationComponente'; */
+import NavbarComponent from './components/NavbarComponent';
+import CarouselComponent from './components/CarouselComponent';
+import bg from './images/bgimg3.jpg'
+import CardsComponents from './components/CardsComponents';
+import AboutComponent from './components/AboutComponent';
 
 function App() {
   return (
     <div className="App">
-      <NavBarComponent></NavBarComponent>
-      <CarrouselComponent></CarrouselComponent>
-      <TabsComponent></TabsComponent>
-      {/* <CardComponent></CardComponent> */}
-      <GroupsCards></GroupsCards>
-      <FooterComponent></FooterComponent>
+      <NavbarComponent></NavbarComponent>
+      <CarouselComponent></CarouselComponent>
+      <AboutComponent></AboutComponent>
+      <CardsComponents></CardsComponents>
     </div>
   );
 }

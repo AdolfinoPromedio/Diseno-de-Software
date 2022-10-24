@@ -1,67 +1,49 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Image from 'react-bootstrap/Image'
-import logo from '../Imagenes/logo.png';
-import './MyStyles.css'
+import {Container, Nav, Navbar, NavDropdown, Button, Image} from 'react-bootstrap';
+import logo from '../images/logo.png';
+import './styles.css'
 
-
-export const NavBarComponent = () => {
+export const NavbarComponent = () => {
   return (
-    
-    <Navbar bg="light" expand="lg" fixed="top">
-      <Container>
-        <Navbar.Brand href="#home"><Image src={logo}  roundedCircle  width={80} height={80}/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="m-auto">
-            <div class="d-flex flex-row">
-              <Nav.Link href="#home"> <div class="navbar-text">Home</div> </Nav.Link>
-              <Nav.Link href="#link"> <div class="navbar-text">Productos</div> </Nav.Link>
-
-              <NavDropdown title="Ubicación" id="basic-nav-dropdown" className='navbar-text'>
-                <NavDropdown.Item href="#action/3.1"><div class="navbar-subtext"> Ubicación 1</div></NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2"><div class="navbar-subtext">Ubicación 2</div></NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3"><div class="navbar-subtext">Ubicación 3</div></NavDropdown.Item>
-                <NavDropdown.Divider />
+    <div className="navbardiv">
+      <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Container fluid>
+          <Navbar.Brand href="#home">
+              <img
+                  alt=""
+                  src={logo}
+                  width="50"
+                  height="50"
+                  className="d-inline-block rounded-circle"
+              />{' '}
+              <span style={{ marginLeft: 15, fontStyle: 'italic'}}>Rincón Dulce</span>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mx-auto">
+              <Nav.Link href="#features">Inicio</Nav.Link>
+              <Nav.Link href="#pricing">Productos</Nav.Link>
+              <NavDropdown title="Ubicación" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Ubicación 1</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Ubicación 2</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Ubicación 3</NavDropdown.Item>
               </NavDropdown>
-
-              {/* {<span className="navbar-text">Ubicación</span>}  */}
-
-              <NavDropdown title="Redes" id="basic-nav-dropdown" className='navbar-text'>
-                <NavDropdown.Item href="#action/4.1"><div class="navbar-subtext">Redes Sociales 1</div></NavDropdown.Item>
-                <NavDropdown.Item href="#action/4.2"><div class="navbar-subtext">Redes Sociales 2</div></NavDropdown.Item>
-                <NavDropdown.Divider />
+              <NavDropdown title="Redes Sociales" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Instagram</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Facebook</NavDropdown.Item>
               </NavDropdown>
-            </div>
-          </Nav>
-
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-
-          <span className='span-spacing'></span>
-
-          <Button style={{width: "3rem", height:"3rem"}} variant="outline-primary"
-            className="rounded-circle">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-          </Button>
-
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    
-  );
+            </Nav>
+            <Nav>
+              <Nav.Link href="#cart" style={{ marginRight: 10, fontWeight: 'inherit', fontStyle: 'italic' }}>Carro de Compras</Nav.Link>
+            </Nav>
+            <Button href="#cart" style={{width: "3rem", height:"3rem"}} variant="outline-primary" className="rounded-circle">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            </Button>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
+  )
 }
 
-export default NavBarComponent;
+export default NavbarComponent;
