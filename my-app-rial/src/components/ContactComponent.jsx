@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import '../components/styles/Contact.scss';
+import { Form } from 'react-formio';
 
 
 export const ContactComponent = () => {
@@ -17,64 +18,10 @@ export const ContactComponent = () => {
                 <div className="col-md-6">
                   <div className="contact-wrap w-100 p-lg-5 p-4">
                     <h3 className="mb-4">Envianos tu pedido o consulta</h3>
-                    <form
-                      id="contactForm"
-                      className="contactForm"
-                    >
-                      <div className="row">
-                        <div className="col-md-12">
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              className="form-control"
-                              name="name"
-                              placeholder="Nombre"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="form-group">
-                            <input
-                              type="email"
-                              className="form-control"
-                              name="email"
-                              placeholder="Email"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              className="form-control"
-                              name="subject"
-                              placeholder="Tema"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="form-group">
-                            <textarea
-                              type="text"
-                              className="form-control"
-                              name="message"
-                              placeholder="Mensaje"
-                              cols="30"
-                              rows="6"
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="form-group">
-                            <input
-                              type="submit"
-                              value="Enviar mensaje"
-                              className="btn btn-primary"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </form>
+                    {/*<div className='card p-3'>
+                      <h5 className='card-title'>Formulario</h5>*/}
+                    <div className='"card bg-light text-dark"'><Form src={"https://maundswywbsqqza.form.io/contactform"} /*onSubmit={onSubmitHandler}*/ /></div>
+                    {/*</div>*/}
                   </div>
                 </div>
                 <div className="col-md-6 d-flex align-items-stretch">
@@ -89,8 +36,8 @@ export const ContactComponent = () => {
                       </div>
                       <div className="text pl-3">
                         <p>
-                          <span>Dirección La Florida:</span> Froilan Roa 6703 <br/>
-                          <span>Dirección San Miguel:</span> San Ignacio 3422
+                          <span>Dirección La Florida: </span> Froilan Roa 6703 <br/>
+                          <span>Dirección San Miguel: </span> San Ignacio 3422
                         </p>
                       </div>
                     </div>
@@ -119,7 +66,7 @@ export const ContactComponent = () => {
                             laflorida@elrincondulce.cl
                           </a>
                           <br />
-                          <span>Email San Miguel:</span>
+                          <span>Email San Miguel: </span>
                           <a href="mailto:sanmiguel@elrincondulce.cl">
                             sanmiguel@elrincondulce.cl
                           </a>

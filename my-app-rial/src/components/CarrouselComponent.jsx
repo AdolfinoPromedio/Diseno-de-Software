@@ -16,7 +16,7 @@ export const CarrouselComponent = () => {
             alt="First slide"
           />
           <Carousel.Caption className='carrousel-text'>
-            <h3>En el Rincon Dulce</h3>
+            <h2>En el Rincon Dulce</h2>
             <p>Tenemos los mejores dulces de la ciudad.</p>
           </Carousel.Caption>
         </Carousel.Item>
