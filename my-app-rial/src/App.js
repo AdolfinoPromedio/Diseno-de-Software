@@ -4,7 +4,6 @@ import CarrouselComponent from './components/CarrouselComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBarComponent from './components/NavBarComponent';
 import FooterComponent from './components/FooterComponent';
-import TabsComponent from './components/TabsComponent';
 
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';

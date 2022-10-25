@@ -1,7 +1,7 @@
 import React from 'react';
 import { CDBFooter, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 import logo from '../Imagenes/logo.png';
-import '../components/styles/MyStyles.css'
+import '../styles/MyStyles.css'
 
 export const FooterComponent = () => {
   return (
