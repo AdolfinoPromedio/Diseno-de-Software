@@ -1,0 +1,43 @@
+.card:hover {
+ 
+  transition: all 0.7s linear;
+}
+.card{
+ 
+  background-color: #ddb9409a!important;
+  height: 99%;
+  width: 100%;
+  margin-bottom: 5%;
+  
+}
+.card-body {
+  
+  background-color: #ddb9409a!important;
+  height: 99%;
+  width: 100%;
+  
+}
+
+
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card-img {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  height: 100%;
+  max-width: 100%;
+  max-height: 90%;
+  width: 100%;
+}
+
+.card-img:hover {
+  transform: scale(1.02);
+}
+
