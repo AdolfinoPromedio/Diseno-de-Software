@@ -1,0 +1,2 @@
+Cardinicio solo cambiar CardComponentInicio
+CardsPageProduct solo cambiar CardComponentProducts
