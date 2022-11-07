@@ -8,17 +8,18 @@ import Productos from "../../../pages/Productos";
 import {Link} from 'react-router-dom';
 
 
-function CardComponentInicio({ imageSource, title, id}) {
+function CardComponentInicio({ imageSource, title, id,url}) {
   return (
-    <Card >
-      <Card.Title><Button variant="primary">{title}</Button></Card.Title>
-      <Card.Img  src={imageSource} />
-        
-        
-        
-    </Card>
+    <Link to={url}>
+        <Card >
+          <Card.Title><Button variant="primary">{title}</Button></Card.Title>
+          <Card.Img  src={imageSource} />
+       </Card>
+    </Link>
   );
 }
+
+
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
