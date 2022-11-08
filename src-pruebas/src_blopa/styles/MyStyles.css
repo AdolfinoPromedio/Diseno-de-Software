@@ -1,0 +1,365 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.navbar-text{
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 20px;
+    /*margin-right: 50px;*/
+}
+
+.navbar-subtext{
+    color: rgb(0, 0, 0);
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.navbardiv{
+    background-color:  #f1a971;
+}
+
+.span-spacing{
+    margin-right: 40px;
+}
+
+.carousel{
+    margin-top: 0px;
+}
+.carousel-inner {
+    width:fit-content;
+    height:600px;
+    margin: auto;
+  }
+
+.carousel-item img {
+    margin-top:0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    vertical-align: middle;
+    top: 15%;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 3vw;
+}
+
+.tabs-text{
+    text-align: justify;
+    text-justify: inter-word;
+    color: rgb(0, 0, 0);
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tabs-bg{
+    background-color: #fae5a7;
+}
+
+.shadow{
+    margin-top: 50px;
+    background-color: #f1a971;
+}
+
+.heading{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background: url(../Imagenes/bakerybanner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.heading h1{
+    color: #fff;
+    font-size: 4vw;
+}
+
+.heading p{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about .img{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    flex: 1 1 10px;
+}
+
+.about .img img{
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    padding: auto;
+}
+
+.about .content{
+    margin-right: 50px;
+    flex: 1 1 10px;
+}
+
+.about .content span{
+    color: #fff;
+    font-size: 3vw;
+}
+
+.about .content h3{
+    color: #222;
+    font-size: 2.5vw;
+    padding-top: .5rem;
+}
+
+.about .content p{
+    color: #222;
+    font-size: 1.2vw;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.map-about .map {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.map-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.map-about .content{
+    margin-right: 50px;
+    flex: 1 1 10px;
+}
+
+.map-about .content h3{
+    color: #222;
+    font-size: 2.5vw;
+    padding-top: .5rem;
+    margin-bottom: 40px;
+    margin-left: 50px; 
+}
+
+.map-about .content li{
+    margin-top: 5px;
+    color: #222;
+    font-size: 1.4vw;
+    line-height: 2;
+    text-align: left;
+    margin-left: 70px; 
+}
+
+.Cartbody{
+	margin: 0;
+	padding: 0;
+	background: #ffc293;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.CartContainer{
+	width: 70%;
+	height: 90%;
+	background-color: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0px 10px 20px #f39f5f;
+}
+
+.CartHeader{
+	margin: auto;
+	width: 90%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.CartHeading{
+	font-size: 1.5vw;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+}
+
+.CartAction{
+	font-size: 1vw;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+	border-bottom: 1px solid #E44C4C;
+}
+
+.Cart-Items{
+	margin: auto;
+	width: 90%;
+	height: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Cart-Items img{
+    width: 15vw;
+    height: 20vh;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    padding: auto;
+}
+
+.Cartimage-box{
+	width: 15%;
+	text-align: center;
+    margin: 20px;
+}
+.Cartabout{
+	height: 100%;
+	width: 24%;
+}
+.Carttitle{
+    margin-top: 100px;
+	margin-bottom: 20px;
+	line-height: 30px;
+	font-size: 1.4vw;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.Cartsubtitle{
+	line-height: 10px;
+	font-size: 0.8vw;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #909090;
+}
+
+.Cartcounter{
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Cartbtn{
+    margin: 10px;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1vw;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+	cursor: pointer;
+}
+.Cartcount{
+	font-size: 1vw;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #202020;
+}
+
+.Cartprices{
+	text-align: right;
+    margin-bottom: 40px;
+}
+.Cartamount{
+	padding-top: 20px;
+	font-size: 1.3vw;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.Cartsave{
+	padding-top: 5px;
+	font-size: 0.8vw;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #1687d9;
+	cursor: pointer;
+}
+.Cartremove{
+	padding-top: 5px;
+	font-size: 0.8vw;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+}
+
+.Cartpad{
+	margin-top: 5px;
+}
+
+.Carthr{
+	width: 66%;
+	float: right;
+	margin-right: 5%;
+}
+.Cartcheckout{
+	float: right;
+	margin-right: 5%;
+	width: 28%;
+}
+.Carttotal{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.CartSubtotal{
+	font-size: 1.3vw;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #202020;
+}
+.Cartitems{
+	font-size: 0.8vw;
+	font-family: 'Open Sans';
+	font-weight: 500;
+	color: #909090;
+	line-height: 10px;
+}
+.Carttotal-amount{
+	font-size: 1.8vw;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+}
+.Cartbutton{
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+	border: none;
+	background: linear-gradient(to bottom right, #ffc293, #f1a971);
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 1vw;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #202020;
+}
+
+@media (max-width: 900px) {
+    .carousel-inner {
+      width:auto;
+      height:auto;
+    }
+}
+

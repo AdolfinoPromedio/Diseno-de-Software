@@ -1,6 +1,6 @@
-import React from 'react'
-import img1 from '../images/bread.jpg';
-import './styles.css'
+import React from 'react';
+import img1 from '../Imagenes/bread.jpg';
+import '../styles/MyStyles.css';
 
 export const AboutComponent = () => {
   return (
@@ -21,6 +21,10 @@ export const AboutComponent = () => {
                 salados de todo tipo, como empanadas. Los invitamos a echar un ojo por la página y encantarse con nuestros ricos postres!</p>
             </div>
         </section>
+
+        <div class="heading">
+            <h1>Productos</h1>
+        </div>
     </div>
   )
 }

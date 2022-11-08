@@ -1,9 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from '../images/EXT00002.png';
-import img2 from '../images/EXT00016.png';
-import img3 from '../images/EXT09845.png';
+import img1 from '../Imagenes/EXT00002.png';
+import img2 from '../Imagenes/EXT00016.png';
+import img3 from '../Imagenes/EXT09845.png';
 import React from 'react'
-import './styles.css'
+import '../styles/MyStyles.css'
 
 export const CarouselComponent = () => {
   return (
