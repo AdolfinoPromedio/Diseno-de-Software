@@ -19,6 +19,7 @@ export const FooterComponent = () => {
               alt="logo"
               src={logo}
               width="50px"
+              className="d-inline-block rounded-circle"
             />
           </a>
           <span className="mx-3 ml-4 h5 mb-0" style={{ fontWeight: 'revert', fontStyle: 'italic' }}>Rincón Dulce</span>

@@ -2,20 +2,24 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import PropTypes from "prop-types";
-import "./card_inicio.css";
 
-function CardComponentInicio({ imageSource, title, precio, id}) {
+import "./card_inicio.css";
+import Productos from "../../../pages/Productos";
+import {Link} from 'react-router-dom';
+
+
+function CardComponentInicio({ imageSource, title, id,url}) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={imageSource} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{precio}</Card.Text>
-        <Button variant="primary">carrito</Button>
-      </Card.Body>
-    </Card>
+    <Link to={url}>
+        <Card >
+          <Card.Title><Button variant="primary">{title}</Button></Card.Title>
+          <Card.Img  src={imageSource} />
+       </Card>
+    </Link>
   );
 }
+
+
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
@@ -25,3 +29,5 @@ Card.propTypes = {
 };
 
 export default CardComponentInicio;
+
+

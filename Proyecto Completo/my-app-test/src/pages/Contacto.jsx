@@ -7,7 +7,6 @@ export const Contacto = () =>{
     return(
         <div>
             <ContactComponent></ContactComponent>
-            <Form src="https://maundswywbsqqza.form.io/contactform" />
         </div>
     )
 }
