@@ -2,9 +2,9 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-//import '../components/styles/Contact.scss';
-import "../styles/Contact.scss"
+import '../styles/Contact.scss';
 import { Form } from 'react-formio';
+import Container from 'react-bootstrap/Container';
 
 
 export const ContactComponent = () => {
@@ -21,7 +21,11 @@ export const ContactComponent = () => {
                     <h3 className="mb-4">Envianos tu pedido o consulta</h3>
                     {/*<div className='card p-3'>
                       <h5 className='card-title'>Formulario</h5>*/}
-                    <div className='"card bg-light text-dark"'><Form src={"https://maundswywbsqqza.form.io/contactform"} /*onSubmit={onSubmitHandler}*/ /></div>
+                    <div className='"card bg-light text-dark"'>
+                      <Container>
+                        <Form src={"https://maundswywbsqqza.form.io/contactform"}/>
+                      </Container>
+                    </div>
                     {/*</div>*/}
                   </div>
                 </div>

@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.formio-form{
+  text-align: left;
+  color: #000000;
+  
+}
+
+.form-control{
+  color: rgb(0, 0, 0);
+}
+
+.btn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}

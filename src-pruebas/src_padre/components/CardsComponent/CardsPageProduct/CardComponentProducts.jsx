@@ -10,10 +10,13 @@ function CardComponentProducts({ imageSource, title,precio, id}) {
       <Card.Body>
         <Card.Title>{title}: {precio}$</Card.Title>
         
-          <Button variant="text" disabled>{count}</Button>
-            <button onClick={() => setCount(count - 1)}>-</button>
-            <button onClick={() => setCount(count + 1)}>+</button>
-            <Button variant="primary" size="lg">carrito</Button> 
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-secondary"  onClick={() => setCount(count - 1)}>-</button>
+          <button type="button" class="btn btn-secondary">{count}</button>
+          <button type="button" class="btn btn-secondary"onClick={() => setCount(count + 1)}>+</button>
+          <Button variant="primary" size="lg">carrito</Button>
+      
+        </div>
       </Card.Body>
     </Card>
     
@@ -21,3 +24,7 @@ function CardComponentProducts({ imageSource, title,precio, id}) {
   );
 }
 export default CardComponentProducts;
+
+
+
+        

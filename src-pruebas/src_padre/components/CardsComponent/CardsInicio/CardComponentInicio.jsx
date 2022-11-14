@@ -12,8 +12,11 @@ function CardComponentInicio({ imageSource, title, id,url}) {
   return (
     <Link to={url}>
         <Card >
-          <Card.Title><Button variant="primary">{title}</Button></Card.Title>
+          
           <Card.Img  src={imageSource} />
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <Card.Title><Button className="button-inicio">{title}</Button></Card.Title>
+          </div>
        </Card>
     </Link>
   );

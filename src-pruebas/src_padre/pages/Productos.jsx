@@ -1,10 +1,13 @@
 import React from 'react';
 import ShowCardsProducts from '../components/CardsComponent/CardsPageProduct/ShowCardsProducts';
-import ShowCardsCategory from '../components/CardsComponent/CardsInicio/ShowCardsCategory';
+import DataJson from '../components/DataJson(NoUse)';
+import Container from 'react-bootstrap/Container';
+
+
 export const Productos = () =>{
     return(
         <div>
-            < ShowCardsProducts></ ShowCardsProducts>
+            <ShowCardsProducts></ShowCardsProducts>
         </div>
     )
 }
