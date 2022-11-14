@@ -1,5 +1,6 @@
 import React,{ useState } from "react";
 import Button from 'react-bootstrap/Button';
+import { ButtonGroup,ButtonToolbar } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import "./card_products.css"
 function CardComponentProducts({ imageSource, title,precio, id}) {
@@ -9,14 +10,26 @@ function CardComponentProducts({ imageSource, title,precio, id}) {
       <Card.Img variant="top" src={imageSource} />
       <Card.Body>
         <Card.Title>{title}: {precio}$</Card.Title>
-        
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary"  onClick={() => setCount(count - 1)}>-</button>
-          <button type="button" class="btn btn-secondary">{count}</button>
-          <button type="button" class="btn btn-secondary"onClick={() => setCount(count + 1)}>+</button>
-          <Button variant="primary" size="lg">carrito</Button>
-      
+        <div className="text-center">
+          <div className="d-inline-block">
+          <ButtonToolbar>
+            <ButtonGroup className="btn-count-g">
+                <Button className="btn-count" onClick={() => setCount(count - 1)}>-</Button>
+                <Button className="btn-count">{count}</Button>
+                <Button className="btn-count" onClick={() => setCount(count +1)}>+</Button>
+              </ButtonGroup>
+              
+              <ButtonGroup >
+                <Button  variant="primary" size="lg">carrito</Button>
+              </ButtonGroup>
+         </ButtonToolbar>
+
+          </div>
+
         </div>
+      
+       
+       
       </Card.Body>
     </Card>
     

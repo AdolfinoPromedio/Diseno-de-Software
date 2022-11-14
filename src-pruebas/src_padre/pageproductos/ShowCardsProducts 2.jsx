@@ -1,45 +1,46 @@
 import React from "react";
 import CardComponentProducts from "../components/CardsComponent/CardsPageProduct/CardComponentProducts";
+
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 const cards = [
   {
     id: 1,
-    title: "Nombre Producto",
+    title: "Nombre Producto ",
     precio:9999,
-    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-4-1024x683.jpg",
+    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-2-1024x681.jpg",
   },
   {
     id: 2,
-    title: "Nombre Producto",
+    title: "Nombre Producto ",
    
-    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-4-1024x683.jpg",
+    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-2-1024x681.jpg",
   },
   {
     id: 3,
-    title: "Nombre Producto",
+    title: "Nombre Producto ",
     precio:9999,
-    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-4-1024x683.jpg",
+    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-2-1024x681.jpg",
   },
   {
     id: 4,
     title: "Nombre Producto",
     precio:9999,
-    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-4-1024x683.jpg",
+    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-2-1024x681.jpg",
   },
   {
     id: 5,
     title: "Nombre Producto",
     precio:9999,
-    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-4-1024x683.jpg",
+    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-2-1024x681.jpg",
   },
 
   {
     id: 6,
     title: "Nombre Producto",
     precio:9999,
-    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-4-1024x683.jpg",
+    image: "https://www.leotertenerife.com/wp-content/uploads/2020/07/Tipos-de-reposter%C3%ADa-2-1024x681.jpg",
   },
 ];
 
@@ -66,3 +67,5 @@ function Cards_productos_2() {
 }
 
 export default Cards_productos_2;
+
+
