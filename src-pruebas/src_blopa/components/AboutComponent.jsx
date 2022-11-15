@@ -3,10 +3,12 @@ import img1 from '../Imagenes/bread.jpg';
 import '../styles/MyStyles.css';
 
 export const AboutComponent = () => {
+  var username = localStorage.getItem("username").replace('"', '').replace('"', '');
+  
   return (
     <div>
         <div class="heading">
-            <h1>¡Hola!</h1>
+            <h1>¡Hola {username}!</h1>
         </div>
         <section class="about"> 
             <div class="img">
