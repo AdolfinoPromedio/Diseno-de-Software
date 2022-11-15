@@ -2,6 +2,7 @@ import React from "react";
 import CardComponentProducts from "../components/CardsComponent/CardsPageProduct/CardComponentProducts";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
 const cards = [
   {
@@ -45,23 +46,27 @@ const cards = [
 
 function Cards_productos_2() {
   return (
-    <Row xs={2} md={1} className="g-4">
-    {Array.from({ length: 1}).map((_, idx) => (
-      <Col>
-        <div>
-          <div className="container d-flex justify-content-center align-items-center h-100">
-            <div className="row">
-              {cards.map(({ title, image, precio, id }) => (
-                <div className="col-md-4" key={id}>
-                  <CardComponentProducts imageSource={image} title={title} precio={precio} />
+    <Container>
+       <Row >
+          {Array.from({ length: 1}).map((_, idx) => (
+            <Col>
+              <div>
+                <div className="container d-flex justify-content-center align-items-center h-100">
+                  <div className="row">
+                    {cards.map(({ title, image, precio, id }) => (
+                      <div className="col-md-4" key={id}>
+                        <CardComponentProducts imageSource={image} title={title} precio={precio} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Col>
-    ))}
-    </Row>
+              </div>
+            </Col>
+          ))}
+      </Row>
+
+    </Container>
+   
   );
 }
 

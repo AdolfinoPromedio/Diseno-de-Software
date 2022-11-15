@@ -2,6 +2,7 @@ import React from "react";
 import CardComponentProducts from "../components/CardsComponent/CardsPageProduct/CardComponentProducts";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { Container } from "react-bootstrap";
 
 const cards = [
   {
