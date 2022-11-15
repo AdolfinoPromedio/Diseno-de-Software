@@ -7,43 +7,64 @@ import '../styles/MyStyles.css'
 
 export const CarouselComponent = () => {
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={img1}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-            <h3>En el Rincon Dulce</h3>
-            <p>Tenemos los mejores dulces de la ciudad.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={img2}
-          alt="Second slide"
-        />
+    <div>
+      <Carousel fade>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={img1}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+          <div id='block_container'>
+            <div class='carousel-text-style'>
+              En el <div className='color_equalfont'>
+              <div className='carousel-onlycolor'>Rincón</div> <div class='carousel-text-style2'>dulce<br/></div>
+                </div> 
+              Tenemos los mejores dulces de la ciudad.
+            </div>
+          </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={img2}
+            alt="Second slide"
+          />
 
-        <Carousel.Caption>
-            <h3>En el Rincon Dulce</h3>
-            <p>Ofrecemos un servicio de calidad para todos.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={img3}
-          alt="Third slide"
-        />
+          <Carousel.Caption>
+            <div id='block_container'>
+              <div class='carousel-text-style'>
+                En el <div className='color_equalfont'>
+              <div className='carousel-onlycolor'>Rincón</div> <div class='carousel-text-style2'>dulce<br/></div>
+                </div> 
+                Ofrecemos un servicio de calidad para todos.
+              </div>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={img3}
+            alt="Third slide"
+          />
 
-        <Carousel.Caption>
-            <h3>En el Rincón Dulce</h3>
-            <p>Nos preocupamos de los pequeños detalles.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+          <Carousel.Caption>
+            <div id='block_container'>
+              <div class='carousel-text-style'>
+                  En el <div className='color_equalfont'>
+              <div className='carousel-onlycolor'>Rincón</div> <div class='carousel-text-style2'>dulce<br/></div>
+                </div>  
+                  Nos preocupamos de los pequeños detalles.
+              </div>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        </Carousel>
+    </div>
+    
   )
 }
 

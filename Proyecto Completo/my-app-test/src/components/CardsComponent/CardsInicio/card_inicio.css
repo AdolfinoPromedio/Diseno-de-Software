@@ -13,8 +13,9 @@
 .card-body {
   
   background-color: #ddb9409a!important;
-  height: 99%;
+  height: 100%;
   width: 100%;
+  
   
 }
 
@@ -33,10 +34,26 @@
   transition: all 0.2s ease-in-out;
   height: 100%;
   max-width: 100%;
-  max-height: 90%;
+  max-height: 100%;
   width: 100%;
 }
 
 .card-img:hover {
   transform: scale(1.02);
+}
+
+.button-inicio{
+  color: white;
+  background-color: #786643;
+  border-bottom: #786643;
+  opacity: 0.75;
+  border-color: #786643;
+}
+.button-inicio:hover{
+  color:black;
+  background-color: #64B499;
+  border-color: #64B499;
+  opacity: 1;
+  
+
 }

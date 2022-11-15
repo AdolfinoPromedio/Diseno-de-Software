@@ -3,15 +3,19 @@ import img1 from '../Imagenes/piedelimon.jpg';
 import img2 from '../Imagenes/muffin.jpg';
 
 export const Carro = () => {
+    var username = localStorage.getItem("username").replace('"', '').replace('"', '');
   return (
     <div>
-        <div className="heading">
+        <br />
+        <br />
+        <br />
+        <div className="heading only_font2">
             <h1>Carro de Compras</h1>
         </div>
         <body className="Cartbody">
             <div className="CartContainer">
                 <div className="CartHeader">
-                    <h3 className="CartHeading">Carro de Compras</h3>
+                    <h3 className="CartHeading">Carro de Compras de: {username}</h3>
                     <h5 className="CartAction">Vaciar Carro</h5>
                 </div>
 

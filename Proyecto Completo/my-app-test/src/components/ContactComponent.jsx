@@ -10,14 +10,14 @@ import Container from 'react-bootstrap/Container';
 export const ContactComponent = () => {
   return (
     <section className="contact-section">
-      <div className="container">
+      <div className="container contact_collapse">
         <ToastContainer position="top-center" />
         <div className="row justify-content-center">
           <div className="col-md-10">
             <div className="wrapper">
               <div className="row no-gutters">
                 <div className="col-md-6">
-                  <div className="contact-wrap w-100 p-lg-5 p-4">
+                  <div className="contact-wrap w-100 p-lg-5 p-4 contact_style">
                     <h3 className="mb-4">Envianos tu pedido o consulta</h3>
                     {/*<div className='card p-3'>
                       <h5 className='card-title'>Formulario</h5>*/}
@@ -29,7 +29,7 @@ export const ContactComponent = () => {
                     {/*</div>*/}
                   </div>
                 </div>
-                <div className="col-md-6 d-flex align-items-stretch">
+                <div className="col-md-6 d-flex align-items-stretch contact_style ">
                   <div className="info-wrap w-100 p-lg-5 p-4 img">
                     <h3>Contactanos</h3>
                     <p className="mb-4">

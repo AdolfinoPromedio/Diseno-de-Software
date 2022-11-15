@@ -1,20 +1,87 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-.navbar-text{
-    font-family: Verdana;
-    font-style: italic;
-    font-size: 20px;
-    /*margin-right: 50px;*/
+
+@font-face {
+	font-family: chocolate_font;
+	src: url(../Fonts/Chocolate.ttf);
+}
+
+@font-face {
+	font-family: shaping_heart_font;
+	src: url(../Fonts/Shaping\ Heart.ttf);
+}
+
+.only_font1{
+	font-family: shaping_heart_font;
+}
+
+.only_font2{
+	font-family: chocolate_font;
+}
+
+.only_color1{
+	color: #66CBC4 ;
+}
+
+#block_container {
+    display: flex;
+    justify-content: center;
+	text-align:center;
+}
+
+.title1-text{
+	font-family: shaping_heart_font;
+    font-style: normal;
+    font-size: 30px;
+	color: #E5CAAA;
+}
+
+.btn-outline-primary{
+	--bs-btn-hover-border-color: #D6A86F !important;
+	--bs-btn-border-color: #D6A86F !important;
+}
+
+.title2-text{
+	font-family: chocolate_font;
+    font-style: normal;
+    font-size: 30px;
+	color: #66CBC4;
+}
+
+.navbar-text-style{
+    font-family: chocolate_font;
+    font-style: normal;
+    font-size: 30px;
+    margin-right: 10px;
+	margin-left: 10px;
+	color: #66CBC4;
+}
+
+.dropdown>a::after {
+    color: #66CBC4;
+}
+
+.navbar-toggler{
+	color: black !important; 
+}
+
+.nav-link{
+	font-family: chocolate_font;
+    font-style: normal;
+    font-size: 30px;
+    margin-right: 10px;
+	margin-left: 10px;
+	color: #66CBC4;
 }
 
 .navbar-subtext{
-    color: rgb(0, 0, 0);
-    font-family: Verdana;
+    color: #93D0CE;
+    font-family: chocolate_font;
     font-style: italic;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .navbardiv{
-    background-color:  #f1a971;
+    background-color: #ffffff;
 }
 
 .span-spacing{
@@ -24,6 +91,38 @@
 .carousel{
     margin-top: 0px;
 }
+
+.carousel-text-style{
+	/*color: #66CBC4;*/
+	color: #ffffff;
+	font-family: shaping_heart_font;
+    font-style: italic;
+    font-size: 3vw;
+	font-weight: bolder;
+	display:inline;
+}
+
+.carousel-text-style2{
+	/*color: #66CBC4;*/
+	color: #66CBC4;
+	font-family: chocolate_font;
+    font-style: italic;
+    font-size: 3vw;
+	font-weight: bolder;
+	display:inline;
+}
+
+.color_equalfont{
+	background-color: #ffffff6c;
+	display:inline;
+}
+
+.carousel-onlycolor{
+	/*color: #66CBC4;*/
+	color: #D6A86F;
+	display:inline;
+}
+
 .carousel-inner {
     width:fit-content;
     height:600px;
@@ -39,12 +138,10 @@
 
 .carousel-caption {
     vertical-align: middle;
-    top: 15%;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: Verdana;
-    font-style: italic;
-    font-size: 3vw;
+    top: 20%;
+	font-size: 3vw;
+	padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .tabs-text{
@@ -64,7 +161,7 @@
 
 .shadow{
     margin-top: 50px;
-    background-color: #f1a971;
+    background-color: #D6A86F;
 }
 
 .heading{
@@ -113,21 +210,25 @@
 }
 
 .about .content span{
-    color: #fff;
+    color: #D6A86F;
     font-size: 3vw;
+	font-family: chocolate_font;
 }
 
 .about .content h3{
-    color: #222;
+    color: #D6A86F ;
     font-size: 2.5vw;
     padding-top: .5rem;
+	font-family: chocolate_font;
 }
 
 .about .content p{
-    color: #222;
+    color: #66CBC4;
     font-size: 1.2vw;
     line-height: 2;
     padding: 1rem 0;
+	font-family: shaping_heart_font;
+	font-weight: bolder;
 }
 
 .map-about .map {
@@ -167,7 +268,7 @@
 .Cartbody{
 	margin: 0;
 	padding: 0;
-	background: #ffc293;
+	background: #ffc29300;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -354,6 +455,20 @@
 	font-family: 'Open Sans';
 	font-weight: 600;
 	color: #202020;
+}
+
+.contact_style{
+	width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    padding: auto;
+}
+
+.contact_bg{
+	background-color: #D6A86F;
+}
+
+.contact_collapse{
+	display: block;
 }
 
 @media (max-width: 900px) {

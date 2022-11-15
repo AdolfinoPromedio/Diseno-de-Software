@@ -4,17 +4,30 @@ import mysql.connector as connector
 import pandas as pd
 import openpyxl
 
-url = "https://maundswywbsqqza.form.io/contactform/submission"
+url_contacto = "https://maundswywbsqqza.form.io/contactform/submission"
+url = "https://maundswywbsqqza.form.io/productos/submission"
 url2 = "https://maundswywbsqqza.form.io/productos/submission"
+url3 = "https://maundswywbsqqza.form.io/productos/submission"
+url4 = "https://maundswywbsqqza.form.io/productos/submission"
+url5 = "https://maundswywbsqqza.form.io/productos/submission"
+url6 = "https://maundswywbsqqza.form.io/productos/submission"
 
 response = requests.request("GET", url)
 response2 = requests.request("GET", url2)
+response3 = requests.request("GET", url)
+response4 = requests.request("GET", url2)
+response5 = requests.request("GET", url)
+response6 = requests.request("GET", url2)
 
 data = json.loads(response.text)
 data2 = json.loads(response2.text)
+data3 = json.loads(response3.text)
+data4 = json.loads(response4.text)
+data5 = json.loads(response5.text)
+data6 = json.loads(response6.text)
 
 # Ordenamos el Json para que sea legible
-dataj = json.dumps(data2[0], indent=4)
+#dataj = json.dumps(data2[0], indent=4)
 
 def json_to_xlsx(data, xlsx):
     numero = 0
@@ -91,4 +104,4 @@ def json_out(data):
 
 #json_to_xlsx_producto(data2, 'productos.xlsx')
 #json_to_sql(data)
-json_out(data2)
+json_out(data)
