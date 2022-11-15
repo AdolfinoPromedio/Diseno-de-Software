@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import CardComponentInicio from './CardComponentInicio';
-
+import { Container } from 'react-bootstrap';
 const cards = [
   {
     id: 1,
@@ -46,7 +46,8 @@ const cards = [
 
 function ShowCardsCategory() {
   return (
-    <Row xs={2} md={1} className="g-4">
+    <Container >
+        <Row >
     {Array.from({ length: 1}).map((_, idx) => (
       <Col>
         <div>
@@ -64,6 +65,9 @@ function ShowCardsCategory() {
       </Col>
       ))}
     </Row>
+
+    </Container>
+    
   );
 }
 
