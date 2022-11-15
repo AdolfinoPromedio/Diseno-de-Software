@@ -57,6 +57,7 @@
 .btn-count:hover{
   color: black;
   background-color: rgb(201, 201, 201);
+  border-color:  rgb(201, 201, 201);
   
 }
 
